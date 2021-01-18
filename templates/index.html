@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <title>Typing Speed</title>
+</head>
+<body>
+   <div id="divCategory" class="row ">
+     <h3>Select your category</h3>
+     <button id="btnStudent" class="btn btn-full" onclick="showStudent()" >STUDENT</button>
+     <button id="btnTeacher" class="btn btn-full" onclick="showTeacher()" >TEACHER</button>
+   </div>
+  
+    <div id="divStuReg"  class="row" style="display: none;">
+      <h3>Register Yourself First!</h3>
+            <label>Enter RollNo: </label>
+            <input type="text" required placeholder="Enter Roll No" id="rollNo" required/>
+            <br>
+            <button type="button" class="btn btn-full" id="btnSubmit" onclick="getRollNo()"> SUBMIT </button>
+    </div>
+    
+    <!-- Creating a textarea-->
+    <div id="msgDiv" style="display: none;">
+      <textarea  disabled id="input_text" placeholder="Enter your message here....."  cols="30" rows="10" disabled required></textarea>
+      
+    </div>
+    <div id="divTeacherAuth" class="row" style="display: none;"> 
+      <label>Enter Username:</label>
+      <input type="text" id="username">
+      <br>
+      <label>Enter Password: </label>
+      <input type="text" id="password">
+      <br>
+      <button class="btn btn-full" onclick="btnSubmit()">SUBMIT</button>
+    </div>
+    <div id="showData" style="display: none;">
+    <!-- Creating a Table To show Data-->
+    <table id="stuTable">
+      <caption>Student's Typing Speed</caption>
+      <tr>
+        <th>Roll No</th>
+        <th>Total Words</th>
+        <th>Total Characters</th>
+        <th>Words/min</th>
+      </tr>  
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    </div>
+    
+
+  
+         <script src="../client/script.js"></script>
+
+    </body>
+   
+
+
+</html>
+
+
+ 
+  
+
